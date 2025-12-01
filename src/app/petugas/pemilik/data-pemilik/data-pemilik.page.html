@@ -95,7 +95,6 @@
         </ion-select>
       </ion-item>
       
-
       <ion-label position="stacked">Alamat *</ion-label>
       <ion-item>
         <ion-textarea 
@@ -112,12 +111,12 @@
 
     <!-- Tombol Simpan -->
     <div class="button-container">
-      <ion-button expand="block" color="primary" type="submit">
+      <ion-button class="btn-save" expand="block" color="success" type="submit">
         <ion-icon name="save-outline" slot="start"></ion-icon>
         {{ isEditMode ? 'Update Data' : 'Simpan Data' }}
       </ion-button>
       
-      <ion-button expand="block" color="light" (click)="goBack()" type="button">
+      <ion-button class="btn-cancel" expand="block" color="danger" (click)="goBack()" type="button">
         <ion-icon name="close-outline" slot="start"></ion-icon>
         Batal
       </ion-button>
