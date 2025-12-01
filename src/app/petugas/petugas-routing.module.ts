@@ -28,6 +28,10 @@ const routes: Routes = [
     loadChildren: () => import('./data-pemilik/data-pemilik.module').then( m => m.DataPemilikPageModule)
   },
   {
+    path: 'data-pemilik/:id', // ← Tambahkan route edit dengan ID
+    loadChildren: () => import('./data-pemilik/data-pemilik.module').then( m => m.DataPemilikPageModule)
+  },
+  {
     path: 'data-kandang',
     loadChildren: () => import('./data-kandang/data-kandang.module').then( m => m.DataKandangPageModule)
   },
@@ -56,7 +60,7 @@ const routes: Routes = [
     loadChildren: () => import('./pemilik/pemilik.module').then( m => m.PemilikPageModule)
   },
   {
-    path: 'detail-pemilik',
+    path: 'detail-pemilik/:id', // ← Tambahkan :id
     loadChildren: () => import('./detail-pemilik/detail-pemilik.module').then( m => m.DetailPemilikPageModule)
   },
   {
