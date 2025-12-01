@@ -3,23 +3,6 @@
   font-family: "Public Sans", "Noto Sans", sans-serif;
   padding: 16px;
 
-  .pemilik-info {
-    text-align: center;
-    margin-bottom: 20px;
-
-    h2 {
-      color: #0e141b;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    p {
-      color: #4e7397;
-      margin: 2px 0;
-    }
-  }
-
   ion-card {
     margin-bottom: 16px;
 
@@ -72,5 +55,175 @@
         font-size: 15px;
       }
     }
+  }
+}
+
+.pemilik-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: black; // ← Pastikan putih
+  }
+
+  p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95); // ← Putih dengan sedikit transparan
+    margin: 0;
+    font-weight: 500; // ← Tambah weight biar lebih tebal
+  }
+}
+
+ion-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  ion-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .label {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    ion-icon {
+      font-size: 18px;
+      color: #999;
+    }
+  }
+
+  .value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    text-align: right;
+    flex: 1;
+    max-width: 60%;
+  }
+}
+
+.hewan-item,
+.kandang-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  ion-icon {
+    font-size: 28px;
+    color: #667eea;
+  }
+
+  .nama-hewan {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+  }
+
+  .jenis-hewan {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+}
+
+// Loading State
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #666;
+
+  ion-spinner {
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+// Empty State
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+
+  ion-icon {
+    font-size: 80px;
+    color: #ccc;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #999;
+  }
+}
+
+.empty-state-small {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+
+  ion-icon {
+    font-size: 48px;
+    color: #ddd;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 0;
   }
 }

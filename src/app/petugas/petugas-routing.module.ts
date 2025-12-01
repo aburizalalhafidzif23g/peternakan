@@ -28,6 +28,10 @@ const routes: Routes = [
     loadChildren: () => import('./pemilik/data-pemilik/data-pemilik.module').then( m => m.DataPemilikPageModule)
   },
   {
+    path: 'data-pemilik/:id',
+    loadChildren: () => import('./pemilik/data-pemilik/data-pemilik.module').then( m => m.DataPemilikPageModule)
+  },
+  {
     path: 'data-kandang',
     loadChildren: () => import('./kandang/data-kandang/data-kandang.module').then( m => m.DataKandangPageModule)
   },
@@ -56,7 +60,7 @@ const routes: Routes = [
     loadChildren: () => import('./pemilik/pemilik.module').then( m => m.PemilikPageModule)
   },
   {
-    path: 'detail-pemilik',
+    path: 'detail-pemilik/:id',
     loadChildren: () => import('./pemilik/detail-pemilik/detail-pemilik.module').then( m => m.DetailPemilikPageModule)
   },
   {
@@ -163,8 +167,6 @@ const routes: Routes = [
     path: 'detail-mutasi',
     loadChildren: () => import('./mutasi/detail-mutasi/detail-mutasi.module').then( m => m.DetailMutasiPageModule)
   },
-  
-
 ];
 
 @NgModule({

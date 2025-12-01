@@ -35,7 +35,8 @@ const routes: Routes = [
   {
     path: 'otp-verify',
     loadChildren: () => import('./otp-verify/otp-verify.module').then( m => m.OtpVerifyPageModule)
-  },  {
+  },
+  {
     path: 'verify-reset-otp',
     loadChildren: () => import('./verify-reset-otp/verify-reset-otp.module').then( m => m.VerifyResetOtpPageModule)
   },
