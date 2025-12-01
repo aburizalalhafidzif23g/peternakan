@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { PeternakService } from '../../services/peternak.service';
-import { WilayahService } from '../../services/wilayah.service';
+import { PeternakService } from '../../../services/peternak.service';
+import { WilayahService } from '../../../services/wilayah.service';
 import { LoadingController, AlertController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 
