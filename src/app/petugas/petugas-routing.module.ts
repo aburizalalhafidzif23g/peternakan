@@ -166,7 +166,11 @@ const routes: Routes = [
   {
     path: 'detail-mutasi',
     loadChildren: () => import('./mutasi/detail-mutasi/detail-mutasi.module').then( m => m.DetailMutasiPageModule)
+  },  {
+    path: 'perkawinan',
+    loadChildren: () => import('./perkawinan/perkawinan.module').then( m => m.PerkawinanPageModule)
   },
+
 ];
 
 @NgModule({

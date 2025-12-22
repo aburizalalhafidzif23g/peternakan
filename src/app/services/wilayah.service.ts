@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class WilayahService {
 
-  apiUrl = 'http://localhost:8000/api';
+  apiUrl = 'http://192.168.2.108:8000/api';
 
   constructor(private http: HttpClient) { }
 

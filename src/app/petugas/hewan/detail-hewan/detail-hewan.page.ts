@@ -14,7 +14,7 @@ export class DetailHewanPage implements OnInit {
   hewan: any = null;
   isLoading = true;
   barcodeId = '';
-  apiUrl = 'http://localhost:8000/api';
+  apiUrl = 'http://192.168.2.108:8000/api';
 
   constructor(
     private route: ActivatedRoute,

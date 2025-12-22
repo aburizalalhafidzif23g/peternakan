@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class KandangService {
   
-  private apiUrl = "http://localhost:8000/api";
+  private apiUrl = "http://192.168.2.108:8000/api";
 
   constructor(private http: HttpClient) {}
 
