@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class PopulasiService {
-  private apiUrl = 'http://localhost:8000/api';
+  private apiUrl = 'http://192.168.2.114:8000/api';
 
   constructor(private http: HttpClient) {}
 

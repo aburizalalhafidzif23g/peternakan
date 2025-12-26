@@ -65,23 +65,28 @@ const routes: Routes = [
   },
   {
     path: 'kegiatan',
-    loadChildren: () => import('./kegiatan/kegiatan.module').then( m => m.KegiatanPageModule)
-  },
-  {
-    path: 'detail-kegiatan',
-    loadChildren: () => import('./kegiatan/detail-kegiatan/detail-kegiatan.module').then( m => m.DetailPetugasPageModule)
-  },
-  {
-    path: 'mulai-kegiatan',
-    loadChildren: () => import('./kegiatan/mulai-kegiatan/mulai-kegiatan.module').then( m => m.MulaiKegiatanPageModule)
+    loadChildren: () => import('./kegiatan/kegiatan.module')
+      .then(m => m.KegiatanPageModule)
   },
   {
     path: 'jadwal-kegiatan',
-    loadChildren: () => import('./kegiatan/jadwal-kegiatan/jadwal-kegiatan.module').then( m => m.JadwalKegiatanPageModule)
+    loadChildren: () => import('./kegiatan/jadwal-kegiatan/jadwal-kegiatan.module')
+      .then(m => m.JadwalKegiatanPageModule)
+  },
+  {
+    path: 'detail-kegiatan/:id',
+    loadChildren: () => import('./kegiatan/detail-kegiatan/detail-kegiatan.module')
+      .then(m => m.DetailPetugasPageModule)
+  },
+  {
+    path: 'mulai-kegiatan/:id',
+    loadChildren: () => import('./kegiatan/mulai-kegiatan/mulai-kegiatan.module')
+      .then(m => m.MulaiKegiatanPageModule)
   },
   {
     path: 'riwayat-kegiatan',
-    loadChildren: () => import('./kegiatan/riwayat-kegiatan/riwayat-kegiatan.module').then( m => m.RiwayatKegiatanPageModule)
+    loadChildren: () => import('./kegiatan/riwayat-kegiatan/riwayat-kegiatan.module')
+      .then(m => m.RiwayatKegiatanPageModule)
   },
   {
     path: 'penyakit',
